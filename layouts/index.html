@@ -1,0 +1,34 @@
+{{ define "title"}} {{ .Site.Title}} {{end}} 
+{{ define "header"}} {{ partial "header" .}} {{end}} 
+
+{{ define "main"}}
+
+<div id="main">
+  <div id="hero">
+    <h1>{{.Title}}</h1>
+    <p>{{.Description}}</p>
+  </div>
+  <div id="action-buttons">
+    <a class="button primary big" href="/work">See what we made</a>
+  </div>
+
+  <div class="row gutters">
+    <div class="col col-4 item">
+      <h4>Product design</h4>
+      <p>All our projects are design-led, starting with post-its and sketching, ending with design implemented as code in the
+        app. We use design sprints and user research to build products that are user-centered.</p>
+    </div>
+    <div class="col col-4 item">
+      <h4>Web development</h4>
+      <p>Many development practices we follow were first described in "Extreme Programming Explained", published more than 15
+        years ago. Using XP practices improves the quality of our work and happiness of our team.</p>
+    </div>
+    <div class="col col-4 item">
+      <h4>Mobile development</h4>
+      <p>Mobile refers to the user, not the device. We design and develop mobile software with that idea in mind.</p>
+    </div>
+  </div>
+</div>
+{{ end }} 
+
+{{ define "footer"}} {{ partial "footer" .}} {{end}}

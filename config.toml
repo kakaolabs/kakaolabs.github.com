@@ -1,0 +1,30 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Kakaolabs"
+theme = "kube"
+description = "We're a software design and development agency that builds custom web and mobile products for our clients."
+Paginate = 4
+pygmentsStyle = "vs"
+pygmentsCodefences = true
+pygmentsUseClasses = false
+pygmentsCodefencesGuessSyntax = true
+
+[Params]
+  RSSLink = "/index.xml"
+  author = "Kakaolabs" # add your company name
+  github = "kakaolabs" # add your github profile name
+  twitter = "kakaolabs" # add your twitter profile
+  email = "kiennt@kakaolabs.com"
+
+[[menu.main]]
+    name = "Service"
+    weight = 1
+    url = "/service"
+[[menu.main]]
+    name = "Playbook"
+    weight = 3
+    url = "/playbook"
+[[menu.main]]
+    name = "Blog"
+    weight = 4
+    url = "/blog"
