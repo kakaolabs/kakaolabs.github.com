@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+rm -rf public
 hugo
 cd public
 echo "kakaolabs.com" > CNAME
