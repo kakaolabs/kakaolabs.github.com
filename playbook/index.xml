@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Playbook on Kakaolabs</title>
+    <link>/playbook/</link>
+    <description>Recent content in Playbook on Kakaolabs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/playbook/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A/B Testing</title>
+      <link>/playbook/measuring/ab-testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/measuring/ab-testing/</guid>
+      <description>Someone can tell us in a usability test when they&amp;rsquo;re confused by a page or when they&amp;rsquo;re frustrated by upsells during the checkout process. They probably can&amp;rsquo;t tell us whether one set of copy or another is more likely to make them feel an affinity with our landing page, pull out their wallet, and plunk down cash.
+So, we A/B test landing pages and payment flows.
+We don&amp;rsquo;t A/B test price.</description>
+    </item>
+    
+    <item>
+      <title>AARRR Framework</title>
+      <link>/playbook/measuring/aarrr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/measuring/aarrr/</guid>
+      <description>Dave McClure&amp;rsquo;s AARRR framework provides a high-level overview of important metrics. We then use tactics such as event tracking to instrument those metrics.
+The AARRR framework is:
+ Acquisition Activation Retention Revenue Referral  For an early stage product, we work to improve them in this order:
+ Activation: visitor finds the product desirable enough to try, is able to use it and get to aha moment in shortest time possible Retention: user regularly uses product, it is doing the job they hired it for, customer is happy Revenue: user pays for product Acquisition: we know where our users come from, are able to try new channels, run tests, and kill or double-down on different channels Referral: users refer other users, the ideal acquisition channel  </description>
+    </item>
+    
+    <item>
+      <title>Acceptance Tests</title>
+      <link>/playbook/developing/acceptance-tests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/developing/acceptance-tests/</guid>
+      <description>Acceptance tests are jobs stories turned into code. This code is run against the application. When executed for the first time, the test will fail. The developer writes application code until the test passes.
+When the test passes, the developer commits the code into version control with a message such as:
+ Guest creates pledge
+ The code is then run on the Continuous Integration server to make sure the acceptance test still passes in an environment that matches the production environment.</description>
+    </item>
+    
+    <item>
+      <title>Automate your development environment</title>
+      <link>/playbook/laptop/automate-your-development-environment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/laptop/automate-your-development-environment/</guid>
+      <description>We depend on compilers, databases, programming languages, package management systems, installers, and other critical programs for our daily activities.
+Laptop is a script to set up a macOS laptop with the programs required for Django development. It should take less than 15 minutes to install.
+Using an automated setup helps us to stay up-to-date with new operating system and program versions. Also, because the setup is standardized, new team members are able to quickly join a project without wasting time re-configuring their machine.</description>
+    </item>
+    
+    <item>
+      <title>Code Reviews</title>
+      <link>/playbook/developing/code-reviews/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/developing/code-reviews/</guid>
+      <description>Here&amp;rsquo;s the flow. Read our git protocol for the git commands.
+ Create a local feature branch based off master. When feature is complete and tests pass, stage the changes. When you&amp;rsquo;ve staged the changes, commit them. Write a good commit message. Share your branch. Submit a GitHub pull request. Ask for a code review in Slack. A team member other than the author reviews the pull request. They follow Code Review guidelines to avoid miscommunication.</description>
+    </item>
+    
+    <item>
+      <title>Continuous Integration</title>
+      <link>/playbook/developing/continuous-integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/developing/continuous-integration/</guid>
+      <description>Martin Fowler has an extensive description of Continuous Integration. The basics are:
+ We have a test suite that each developer runs on their own machine. When they commit their code to a shared version control repository, the tests are run again, &amp;ldquo;integrated&amp;rdquo; with code from other developers.  This helps ensure there&amp;rsquo;s nothing specific to the developer&amp;rsquo;s machine making the tests pass. The code in version control needs to run cleanly in production later so before the code is allowed to be deployed to production, it is run on a CI server or service.</description>
+    </item>
+    
+    <item>
+      <title>Domain Names and DNS</title>
+      <link>/playbook/production/domain-names-and-dns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/production/domain-names-and-dns/</guid>
+      <description>Use Domainr to see what&amp;rsquo;s available.
+Use DNSimple to buy and maintain domain names. If you already have a domain registered elsewhere, like GoDaddy, DNSimple provides a transfer service that makes it easy to switch.
+We like it for its simplicity. It also has templates we most often need:
+ Heroku Google Apps Cloudflare Fastly GitHub Pages Netlify  Follow the Custom Domains tutorial to set up root and subdomains on Heroku.</description>
+    </item>
+    
+    <item>
+      <title>Error Tracking</title>
+      <link>/playbook/production/error-tracking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/production/error-tracking/</guid>
+      <description>We use Honeybadger to track errors in our products.
+It supports all of the languages and platforms we use to build applications.
+It also provides integrations that make it easy to stay on top of errors. We use its Slack integration for real-time alerts and we use its Trello integration so we can prioritize bugs in the same place as features.</description>
+    </item>
+    
+    <item>
+      <title>Feature Flags</title>
+      <link>/playbook/measuring/feature-flags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/measuring/feature-flags/</guid>
+      <description>Software is soft. It&amp;rsquo;s always changing. Hopefully, we&amp;rsquo;re always learning from our changes.
+A cool way to manage changes is via feature flags. Using a tool like Rollout, we can &amp;ldquo;flag&amp;rdquo; certain features as only ready for parts of our user base; i.e. just the development team, or just the founder&amp;rsquo;s friends, or 10% of all users, etc.
+That way, we can see how users respond to the feature without rolling it out to everyone.</description>
+    </item>
+    
+    <item>
+      <title>Hiring</title>
+      <link>/playbook/company/hiring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/company/hiring/</guid>
+      <description>We are not the permanent team solution for our clients. They often want to know:
+ How do I find a technical co-founder? How can I learn to &amp;ldquo;do it myself&amp;rdquo;? How do I hire designers and developers?  We tell them:
+ To find a technical co-founder, network in person at user groups and online at LinkedIn and AngelList. Is what you really need a designer founder? To learn to do what we do, sit next to us in our office for weeks at a time, pair programming and sketching together.</description>
+    </item>
+    
+    <item>
+      <title>Hosting</title>
+      <link>/playbook/production/hosting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/production/hosting/</guid>
+      <description>We use Heroku. It&amp;rsquo;s a Platform as a Service built on Amazon&amp;rsquo;s cloud infrastructure. It is simple to use when our app is just a toy and is built to scale up for high concurrency or high sustained load.
+They act as our outsourced operations team, helping us deliver working software, instead of dealing with already solved problems which we would have to worry about with a bare-bones hosting provider.</description>
+    </item>
+    
+    <item>
+      <title>Instrumentation</title>
+      <link>/playbook/measuring/instrumentation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/measuring/instrumentation/</guid>
+      <description>In order to analyze metrics later, we need to instrument our app to log the right metrics. The primary type of instrumentation we care about is called &amp;ldquo;event tracking.&amp;rdquo;
+Use Segment to capture events whenever possible. It is analogous to the adapter pattern for analytics services.
+Segment provides one JavaScript library in our web apps, one library in our server-side framework, and one SDK in our mobile apps. This allows us to toggle different services such as Google Analytics, Amplitude, FullStory, Intercom, and others.</description>
+    </item>
+    
+    <item>
+      <title>Log Collection</title>
+      <link>/playbook/production/log-collection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/production/log-collection/</guid>
+      <description>Most applications write useful debugging information to logs. On Heroku, these go to standard output by default and are eventually discarded.
+We typically use Logentries to accept logs from Heroku and other sources. Once sent to Logentries, you can search previous logs and set up alerts for errors outside the Rails stack, such as out of memory errors.
+If we&amp;rsquo;re adding Logentries to a client project, the best solution is to have the client set up their own Logentries account and add the relevant thoughtbot members.</description>
+    </item>
+    
+    <item>
+      <title>Operations</title>
+      <link>/playbook/company/operation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/company/operation/</guid>
+      <description>Running a software-based business requires more than beautiful code or a popular product. Managing cash flow and taxes can feel unimportant or difficult, but getting them right is as vital to our success as product design.
+Fortunately, many services exist which make things like bookkeeping, receipts, signatures, and invoicing much easier.
+Some principles have helped us streamline our operations:
+ Outsource things which are super important but we are not excellent at.</description>
+    </item>
+    
+    <item>
+      <title>Pair Programming</title>
+      <link>/playbook/developing/pair-programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/developing/pair-programming/</guid>
+      <description>Code that is written by two people who sit next to each other at the same computer is pair-programmed code. That code is considered high quality and should result in cost savings due to less maintenance.
+In the long run, this style of development saves money because fewer bugs are written and therefore do not need to be fixed later.
+An indication that pairing is beneficial and should be done more often is the following example:</description>
+    </item>
+    
+    <item>
+      <title>Payment Processing</title>
+      <link>/playbook/production/payment-processing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/production/payment-processing/</guid>
+      <description>For collecting payments from users via credit or debit card, we use Stripe. It is a payment gateway and merchant account. We also use it for recurring billing.
+Charges for Stripe will vary depending on usage. Successful credit card charges are 2.9% + 30 cents. There are no setup fees, monthly fees, or card storage fees.
+For sending money to users&amp;rsquo; bank accounts via ACH, we use Plaid.</description>
+    </item>
+    
+    <item>
+      <title>Performance Monitoring</title>
+      <link>/playbook/production/performance-monitoring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/production/performance-monitoring/</guid>
+      <description>We use NewRelic to monitor performance of production applications.
+Debugging performance might be the best part of a developer&amp;rsquo;s job. There&amp;rsquo;s a clear, numeric problem. When we fix it, that number improves. We can say things like &amp;ldquo;We made this 175% better.&amp;rdquo;
+There&amp;rsquo;s many established techniques for fixing performance problems. A number of them come &amp;ldquo;for free&amp;rdquo; with Rails + Heroku:
+ Amazon server clusters gzipping Asset pipeline SQL query caching  A number of them require developer thought:</description>
+    </item>
+    
+    <item>
+      <title>Principles</title>
+      <link>/playbook/company/principles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/company/principles/</guid>
+      <description>Principle Zero We regularly eliminate and simplify policies. Our most important policy is &amp;ldquo;use your best judgement&amp;rdquo;. We call this Principle Zero.
+Fulfillment We maintain an inclusive environment where we can thrive professionally and personally. We maintain a sustainable pace of productivity, and full lives outside of work. We maximize our ability to take on any project by creating a diverse team who can bring their experience and perspectives together to solve problems.</description>
+    </item>
+    
+    <item>
+      <title>Production Checklist</title>
+      <link>/playbook/production/production-checklist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/production/production-checklist/</guid>
+      <description>We have found that a short checklist is valuable when setting up a new production environment or preparing for a launch:
+ Are we on the latest Heroku stack? Are we using a concurrent web server? See how to deploy with Puma. Are long-running processes such as email delivery being run in background jobs? See how to set up Delayed Job. Are there redundant (at least two) web and background processes running?</description>
+    </item>
+    
+    <item>
+      <title>Refactoring</title>
+      <link>/playbook/developing/refactoring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/developing/refactoring/</guid>
+      <description>The third step of the &amp;ldquo;red, green, refactor&amp;rdquo; step is refactoring, the process of improving the design of existing code without altering its external behavior. It&amp;rsquo;s a critical step in the process, but often overlooked. We&amp;rsquo;re so passionate about refactoring.</description>
+    </item>
+    
+    <item>
+      <title>SSL Certificates</title>
+      <link>/playbook/production/ssl-certificates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/production/ssl-certificates/</guid>
+      <description>We want to ensure that our user&amp;rsquo;s data is encrypted during transit and that the data they may provide is sent securely. The HTTPS-Only Standard provides a great, and much more detailed, description of the reasoning behind this.
+This has become much easier with Let&amp;rsquo;s Encrypt, which provides a free to use, automatic and secure certificate authority. It&amp;rsquo;s integrated with Heroku, which allows us to use their Automated Certificate Management feature.</description>
+    </item>
+    
+    <item>
+      <title>Sales</title>
+      <link>/playbook/company/sales/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/company/sales/</guid>
+      <description>We&amp;rsquo;re designers and developers. We want to design and develop software. Before we can do that, we need clients to hire us. The following section details how our sales process works and answers commonly asked questions by potential clients.
+The overall process is:
+ Someone contacts us. We have them fill out our new project form. We have a phone call or have them come into the office. Qualify/disqualify: are we a good fit for the client?</description>
+    </item>
+    
+    <item>
+      <title>Share configuration with dotfiles</title>
+      <link>/playbook/laptop/share-configuration-with-dotfiles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/laptop/share-configuration-with-dotfiles/</guid>
+      <description>&amp;lsquo;Dotfile&amp;rsquo; is a generalized term for a UNIX configuration file, typically prefixed with a dot (e.g. .vimrc) and found in your home directory. Most UNIX programs, including Vim, will load a dotfile during launch.
+We recommend using dotfiles to customize your tools and environment to suit your preferences, reduce typing, and get work done. Check them into a git repository for safe-keeping and open-source for the benefit of others.
+You can use our dotfiles to make pair programming with teammates easier and make each other more productive.</description>
+    </item>
+    
+    <item>
+      <title>Sharing</title>
+      <link>/playbook/company/sharing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/company/sharing/</guid>
+      <description>We&amp;rsquo;ve learned a ton from blog posts, tweets, and newsletters from others in the community. We try to always give back.
+Blog Our blog is called Giant Robots Smashing Into Other Giant Robots.
+We track and coordinate our blog post authoring on an Editorial Calendar Trello board:
+When someone wants to write a post, they write its headline as a Trello card in the &amp;ldquo;Next Up&amp;rdquo; list of the board, and assign the Trello card to themself.</description>
+    </item>
+    
+    <item>
+      <title>Sketching the interface</title>
+      <link>/playbook/design/sketching-the-interface/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/design/sketching-the-interface/</guid>
+      <description>During our design sprints, everyone sketches. It&amp;rsquo;s a fast way to iterate on ideas, a fast way to make ideas more concrete and a fast way to communicate those ideas. We specifically use Sharpies during our design sprints so that ideas and sketches need to be at a high level. We’re not trying to get all of the details on the page. We&amp;rsquo;re only looking to head in the right direction.</description>
+    </item>
+    
+    <item>
+      <title>Style Guide</title>
+      <link>/playbook/developing/style-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/developing/style-guide/</guid>
+      <description>We write code in a consistent style that emphasizes cleanliness and team communication.
+High level guidelines:
+ Be consistent. Don&amp;rsquo;t rewrite existing code to follow this guide. Don&amp;rsquo;t violate a guideline without a good reason. A reason is good when you can convince a teammate.  Where we can, we set up Hound to help automate following the style guide during Code Review, which helps us stick to our high-level guidelines and keep our reviews focused on code legibility &amp;amp; quality.</description>
+    </item>
+    
+    <item>
+      <title>Subscription Metrics</title>
+      <link>/playbook/measuring/subscription-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/measuring/subscription-metrics/</guid>
+      <description>We work on a lot of products that have a monthly or yearly subscription business model. There are some classic metrics we know we want to track for these products, such as:
+ Monthly Recurring Revenue (MRR) Active subscriptions Lifetime Value (LTV) Churn per-plan, monthly and annually  Since we use Stripe for payments, we&amp;rsquo;ve found Baremetrics is the fastest and easiest way to track these metrics.
+If our clients want to raise money from investors, the following numbers are generally considered investment-ready:</description>
+    </item>
+    
+    <item>
+      <title>Test Product Viability and Usability</title>
+      <link>/playbook/design/test-product/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/design/test-product/</guid>
+      <description>Running user interviews and usability tests early and often is critical to product success. We even test sketches to get a feel for flows and mental models. The earlier the stage, the more we&amp;rsquo;re testing the problem/solution fit and gathering research on potential users. The later the stage, the more we&amp;rsquo;re testing actual usability of the product.
+User interviews and usability tests are the most effective way to test a product&amp;rsquo;s viability and usability.</description>
+    </item>
+    
+    <item>
+      <title>Test-Driven Development</title>
+      <link>/playbook/developing/test-driven-development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/developing/test-driven-development/</guid>
+      <description>Test-Driven Development (TDD) is perhaps the most important Extreme Programming (XP) rule that we practice.
+Business benefits of TDD:
+ Deliver more value, faster Always ship working software Adapt to change quickly  Code benefits of TDD:
+ Readable specs and code Clean public interfaces Decoupled modules  Process benefits of TDD:
+ Regression safety net Fearless refactoring Team trust  At a high level, how to test is very simple:</description>
+    </item>
+    
+    <item>
+      <title>Time</title>
+      <link>/playbook/company/time/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/company/time/</guid>
+      <description>We work a sustainable pace. We work four days for clients on consulting and one day on &amp;ldquo;investment time.&amp;rdquo; We typically spend Monday-Thursday on client work and Friday on investment.
+When taking time off during client work, we discuss how it will impact the schedule with other team members.
+Sending off-hours communication may create an unintended sense of urgency with the recipients of the message, so we try to avoid creating that urgency when possible.</description>
+    </item>
+    
+    <item>
+      <title>Transactional Email</title>
+      <link>/playbook/production/transactional-email/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/production/transactional-email/</guid>
+      <description>We use SendGrid to have our application deliver email to users, known as transactional email.
+Examples of transactional email are:
+Confirmations Follow ups after the first 3 days of use Free trial is expiring Message another user in the system We use SendGrid directly, not via the Heroku add-on, in order to avoid being lumped under the same IP group as others on Heroku (who might be misbehaving).</description>
+    </item>
+    
+    <item>
+      <title>Use an extensible editor</title>
+      <link>/playbook/laptop/use-an-extensible-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/laptop/use-an-extensible-editor/</guid>
+      <description>Plain text won&amp;rsquo;t become obsolete. It helps leverage your work and simplifies debugging and testing. The editor should be an extension of your hand; make sure your editor is configurable, extensible, and programmable. – The Pragmatic Programmer
+ Almost all developers at thoughtbot use Vim as their text editor.
+When we use Vim, we type few characters and avoid the mouse. We&amp;rsquo;re productive and more easily achieve flow.
+It&amp;rsquo;s great because:</description>
+    </item>
+    
+    <item>
+      <title>Version Control</title>
+      <link>/playbook/developing/version-control/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/developing/version-control/</guid>
+      <description>We always use source code control. It&amp;rsquo;s like a time machine. We can work in parallel universes of our source code, experimenting without fear of losing work, rolling back if something goes wrong.
+Git is an open source source code control system written by Linus Torvalds. It&amp;rsquo;s fast and great for working in branches.
+We use GitHub for hosting our Git repositories.</description>
+    </item>
+    
+    <item>
+      <title>What is Interaction Design?</title>
+      <link>/playbook/design/what-is-interaction-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/design/what-is-interaction-design/</guid>
+      <description>Interaction gives users the ability to change the canvas, to directly manipulate. Designing those interactions is what makes our software come to life. Interactions should provide affordance — animation, for examples, can be used as a powerful metaphor for helping a user understand an interface. Interactions help guide a user from the beginning of a task through it&amp;rsquo;s completion.
+Designers guide these interactions from prototype to implementation. For web applications we start in the browser.</description>
+    </item>
+    
+    <item>
+      <title>What is User Interface Design?</title>
+      <link>/playbook/design/what-is-user-interface-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/design/what-is-user-interface-design/</guid>
+      <description>An interface is a place where two things meet: the human and the computer. The computer has functions it can perform. The human needs inputs and outputs to take advantage of those functions. The interface is the arrangement of inputs and outputs that enable people to apply the computer&amp;rsquo;s functions to create outcomes they want. - Ryan Singer
+ In the context of our software, the user interface is the individual views that provide for goal completion.</description>
+    </item>
+    
+    <item>
+      <title>What is Visual Design?</title>
+      <link>/playbook/design/what-is-visual-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/design/what-is-visual-design/</guid>
+      <description>We refer to an application&amp;rsquo;s visual design exclusively as its style. We use gestalt principles to communicate and bring order to those ideas in our applications.
+Those fundamentals include, among others:
+ Alignment (often achieved with grids) Emphasis (often achieved with size, position, color) Consistency (buttons, links, headers typically look alike) Whitespace (elegant, timeless, gives eye a rest)  Successful visual designs typically don&amp;rsquo;t draw attention to themselves. The content will be front-and-center.</description>
+    </item>
+    
+    <item>
+      <title>Wireframing in HTML and CSS</title>
+      <link>/playbook/design/wireframing-in-html-and-css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/playbook/design/wireframing-in-html-and-css/</guid>
+      <description>Designers refine sketches into HTML and CSS wireframes. HTML and CSS wireframes are built using Bourbon and Neat in the browser so the team can understand the core experience as fast as possible. It also allows developers to start implementing features within the wireframes.
+It is crucial to keep the design of the application ahead of the development. Focus should be placed on wireframing usability, user experience, and flows.
+We find it important to keep the design and development cycle adequately tight.</description>
+    </item>
+    
+  </channel>
+</rss>
